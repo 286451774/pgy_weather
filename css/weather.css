@@ -1,0 +1,212 @@
+
+html,body,.weather{
+    height: 100%;
+}
+body{
+    background: url(../img/pgybg.png)no-repeat center center;
+    background-size: cover;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.weather{
+    overflow-y:auto;
+}
+
+.system-top{
+    height: 24px;
+    position: sticky;
+    top: 0;
+   
+}
+.content-head{
+    height: .44rem;
+    padding:0 .1rem;
+    background-color:rgba(255, 255,255, .3);
+    color: #333333;
+}
+.location-icon{
+    width: .2rem;
+    height: .2rem;
+    background:url(../img/location.png)no-repeat center center;
+    background-size: .2rem .2rem;
+    margin-top: .12rem;
+}
+.location-city{
+    width: .8rem;
+    font-size: .16rem;
+    line-height: .44rem;
+    margin-left: .1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-box{
+    width: calc(100% - 1.58rem);
+    height: .28rem;
+    margin-top: .08rem;
+    margin-right: .2rem;
+    border-radius: .14rem;
+    padding-left: .14rem;
+    padding-right: .14rem;
+    background: #ddd;
+    background-image:linear-gradient(to right, rgb(13, 163, 233) 0%, rgba(255,255,255, .5) 100%);
+}
+.search-icon{
+    width: .2rem;
+    height: .2rem;
+    margin-top: .05rem;
+    background: url(../img/search.png) no-repeat center center;
+    background-size: .2rem .2rem;
+}
+.search{
+    display: block;
+    width: calc(100% - .2rem);
+    height: .28rem;
+}
+.search::-webkit-input-placeholder{
+    color: rgb(92, 89, 89);
+}
+
+.content-box{
+    position: relative;
+    z-index: 1;
+    /* 精确计算高度 上拉 截掉 */
+    height: calc(100% - 24px - .44rem);
+    overflow-y: auto;
+}
+.today-weather{
+    color: #333333;
+    margin:.2rem .3rem;
+    background-color:rgb(255, 255, 255,.5);
+    box-shadow: 0px 0px  16px 2px rgba(57, 132, 255, 1) inset;
+    padding:.3rem .3rem;
+    border-radius: .15rem;
+}
+.tem-box{
+    margin: .2rem 0;
+}
+.date{
+    margin-right: .3rem;
+}
+.tem{
+    width: 1.32rem;
+    font-size: .5rem;
+    
+}
+.weather-status-box{
+    height: .79rem;
+    width: calc(100% - 1.61rem);
+    margin-left:.2rem;
+    position: relative;
+}
+.weather-status{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.wind-box{
+    margin-top: .2rem;
+}
+.wea{
+    height: .2rem;
+    width: .2rem;
+    margin-right: .2rem;
+    padding-bottom: .05rem;
+    /* background-image:url(../img/yun.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .2rem .2rem;
+}
+.win{
+    margin-right: .2rem;
+
+}
+.win_speed{
+    margin-right: .2rem;
+}
+
+.hours-box{
+    background-color:rgba(255, 255,255, .3);
+    color: #333333;
+}
+.hours-title{
+    color:#333333;
+    height: .32rem;
+    font-size: .16rem;
+    line-height: .32rem;
+    text-align: center;
+    padding: 0 .1rem;
+    background-color:rgba(159, 223, 243, 0.5);
+    border-bottom: 1px solid rgba(46, 48, 53, 0.8);
+}
+.hours-weather{
+    overflow-x: auto;
+    padding:.1rem;
+    text-align: center;
+    background-color:rgba(255, 255,255,.5);
+}
+.hours-weather>ul{
+    width: 28.8rem;
+}
+.hours-weather>ul>li{
+    float: left;
+    width: 1.2rem;
+}
+.hours-weather>ul>li>div{
+    margin-bottom: .2rem;
+}
+.hours-weather>ul>li>div:last-child{
+    margin-bottom: 0;
+}
+.cloud-icon{
+    width: .2rem;
+    height: .2rem;
+    /* background-image: url(../img/yun.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .2rem .2rem;
+    margin: 0 auto;
+}
+
+.future-box{
+    margin-top: .1rem;
+    background-color:rgba(255, 255,255, .3);
+    color: #333333;
+}
+.future-title{
+    color:#333333;
+    height: .32rem;
+    font-size: .16rem;
+    line-height: .32rem;
+    text-align: center;
+    padding: 0 .1rem;
+    background-color:rgba(159, 223, 243, 0.5);
+    border-bottom: 1px solid rgba(46, 48, 53, 0.8);
+}
+.future-six-weather{
+    padding: .1rem;
+}
+.future-six-weather>ul>li{
+    padding: .1rem 0;
+}
+.future-six-weather>ul>li>span{
+    float: left;
+    width: 25%;
+
+}
+.future-six-icon{
+    display: block;
+    width: .2rem;
+    height: .2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: .2rem .2rem;
+}
+.w-dir{
+    text-align: right;
+}

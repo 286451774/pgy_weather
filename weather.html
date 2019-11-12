@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>蒲公英天气</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/weather.css">
+</head>
+<body>
+
+    <div class="weather">
+        <div class="nav">
+            <!-- 系统顶部 -->
+            <div class="system-top"></div>
+            <!-- 第一部分 头部搜索 -->
+            <div class="content-head">
+                <div class="fl content-head-l">
+                    <span class="fl location-icon"></span>
+                    <span class="fl location-city"></span>
+                </div>
+                <div class="fl search-box">
+                    <input class="fl search" type="text" placeholder="输入城市，如：钦州" autocomplete="off" />
+                    <span class="fl search-icon"></span>
+                </div>
+            </div>
+        </div>
+        <!-- 中心部分 -->
+        <div class="content-box">
+            <!-- 第二部分 今天 天气 -->
+            <div class="today-weather">
+                <div class="clearfix">
+                    <span class="fl date"></span>
+                    <span class="fl week"></span>
+                </div>
+                <div class="tem-box clearfix">
+                    <span class="fl tem"></span>
+                    <div class="fl weather-status-box">
+                        <div class="weather-status">
+                            <span class="fl wea"></span>
+                            <span class="fl air_level"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="wind-box clearfix">
+                    <span class="fl win"></span>
+                    <span class="fl win_speed"></span>
+                    <span class="fl win_meter"></span>
+                </div>
+            </div>
+            <!-- 第三部分 -->
+            <div class="hours-box">
+                <div class="hours-title"></div>
+                <div class="hours-weather">
+                    <ul id="hoursWeather" class="clearfix">
+                        <!-- <li>
+                            <div>09时</div>
+                            <div class="cloud-icon" style="background-image: url(./img/yun.png)"></div>
+                            <div>20℃</div>
+                            <div>无持续风向</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 第四部分 -->
+            <div class="future-box">
+                <div class="future-title">未来6天天气</div>
+                <div class="future-six-weather">
+                    <ul id="futureWeather">
+                        <!-- <li class="clearfix">
+                            <span>22日</span>
+                            <span>
+                                <i class="future-six-icon"></i>
+                            </span>
+                            <span>20℃</span>
+                            <span>无持续风向</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/rem.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
